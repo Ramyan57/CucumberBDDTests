@@ -1,0 +1,19 @@
+<!DOCTYPE suite SYSTEM "http://testng.org/testng-1.0.dtd">
+<suite name="New Tours Scenarios">
+
+	<test name="To validate if available flights are displayed to the user">
+
+		<classes>
+			<class name="com.selenium.po.FindFlights"></class>
+
+		</classes>
+	</test>
+	
+		<test name="To validate if user is successfully able to book round trip">
+
+		<classes>
+			<class name="com.selenium.po.RoundTrip"></class>
+
+		</classes>
+	</test>
+</suite>

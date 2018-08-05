@@ -1,0 +1,28 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE suite SYSTEM "http://testng.org/testng-1.0.dtd">
+<suite thread-count="-1" guice-stage="DEVELOPMENT" name="Failed suite [New Tours Scenarios]">
+  <test name="To validate if available flights are displayed to the user(failed)">
+    <classes>
+      <class name="com.selenium.po.FindFlights">
+        <methods>
+          <include name="setProperty"/>
+          <include name="openTestReport"/>
+          <include name="findFlights"/>
+          <include name="closeBrowser"/>
+        </methods>
+      </class> <!-- com.selenium.po.FindFlights -->
+    </classes>
+  </test> <!-- To validate if available flights are displayed to the user(failed) -->
+  <test name="To validate if user is successfully able to book round trip(failed)">
+    <classes>
+      <class name="com.selenium.po.RoundTrip">
+        <methods>
+          <include name="setProperty"/>
+          <include name="openTestReport"/>
+          <include name="roundTrip"/>
+          <include name="closeBrowser"/>
+        </methods>
+      </class> <!-- com.selenium.po.RoundTrip -->
+    </classes>
+  </test> <!-- To validate if user is successfully able to book round trip(failed) -->
+</suite> <!-- Failed suite [New Tours Scenarios] -->
