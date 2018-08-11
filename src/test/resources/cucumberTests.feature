@@ -1,4 +1,4 @@
-Feature: Verify BDD tests
+	Feature: Verify BDD tests
 
 Scenario Outline: verify Rest API status
 Given valid git hub repository link

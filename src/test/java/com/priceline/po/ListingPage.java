@@ -1,0 +1,5 @@
+package com.priceline.po;
+
+public class ListingPage {
+
+}
