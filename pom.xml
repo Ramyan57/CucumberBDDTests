@@ -12,8 +12,8 @@
 				<artifactId>maven-compiler-plugin</artifactId>
 				<version>2.3.2</version>
 				<configuration>
-					<source>6</source>
-					<target>6</target>
+					<source>7</source>
+					<target>7</target>
 				</configuration>
 			</plugin>
 		</plugins>
@@ -49,21 +49,20 @@
 		<dependency>
 			<groupId>info.cukes</groupId>
 			<artifactId>cucumber-picocontainer</artifactId>
-			<version>1.1.2</version>
+			<version>1.2.2</version>
 			<scope>test</scope>
 		</dependency>
-
 
 		<dependency>
 			<groupId>info.cukes</groupId>
 			<artifactId>cucumber-junit</artifactId>
-			<version>1.1.2</version>
+			<version>1.2.2</version>
 			<scope>test</scope>
 		</dependency>
 		<dependency>
 			<groupId>info.cukes</groupId>
 			<artifactId>cucumber-java</artifactId>
-			<version>1.1.2</version>
+			<version>1.2.2</version>
 			<scope>test</scope>
 		</dependency>
 
@@ -71,7 +70,7 @@
 		<dependency>
 			<groupId>info.cukes</groupId>
 			<artifactId>cucumber-core</artifactId>
-			<version>1.1.2</version>
+			<version>1.2.2</version>
 			<scope>test</scope>
 		</dependency>
 
