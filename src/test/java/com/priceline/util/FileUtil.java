@@ -21,16 +21,15 @@ public class FileUtil {
 
 	public static WebDriver driver;
 	public static WebDriverWait wait;
-	protected Properties obj = new Properties();
+	protected static Properties prop = new Properties();
 
 	@Before
 	public void setProperty() throws Exception {
 
 		System.setProperty("webdriver.chrome.driver", System.getProperty("user.dir") + "\\drivers\\chromedriver.exe");
 		driver = new ChromeDriver();
-		wait = new WebDriverWait(driver, 5);
 		FileInputStream objFile = new FileInputStream(System.getProperty("user.dir") + "\\RunConfig.properties");
-		obj.load(objFile);
+		prop.load(objFile);
 	}
 
 	@After(order = 1)
