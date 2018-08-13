@@ -42,7 +42,7 @@ public class FileUtil {
 	@After(order = 2)
 	public void openTestReport() throws Exception {
 
-		File outputFile = new File(System.getProperty("user.dir") + "\\output\\index.html");
+		File outputFile = new File(System.getProperty("user.dir") + "\\output\\cucumber-html-report\\index.html");
 		Desktop.getDesktop().browse(outputFile.toURI());
 	}
 
