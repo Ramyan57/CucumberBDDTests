@@ -8,7 +8,7 @@ import cucumber.api.junit.Cucumber;
 @RunWith(Cucumber.class)
 @CucumberOptions(features = "src/test/resources",
         glue = { "classpath:com.priceline.stepDefn", "com.priceline.util" },
-        plugin = { "pretty","html:target/cucumber-html-report", "json:target/cucumber.json"},
+        plugin = { "pretty","html:output/cucumber-html-report", "json:output/cucumber.json"},
         monochrome = true)
 
 public class Runner {

@@ -9,7 +9,6 @@ import org.openqa.selenium.By;
 import org.openqa.selenium.WebElement;
 import org.openqa.selenium.support.ui.ExpectedConditions;
 
-import com.cucumber.listener.Reporter;
 import com.priceline.util.FileUtil;
 
 public class ListingPage extends FileUtil {
@@ -30,7 +29,7 @@ public class ListingPage extends FileUtil {
 		wait.until(ExpectedConditions.visibilityOfElementLocated(dataId));
 		if (driver.findElement(dataId).isDisplayed()) {
 
-			Reporter.addStepLog("User is sucessfully navigated to listing page");
+			System.out.println("User is sucessfully navigated to listing page");
 			driver.findElement(twoStops).click();
 			boolean isTwoStops = driver.findElement(twoStops).isSelected();
 			driver.findElement(None).click();
@@ -38,17 +37,17 @@ public class ListingPage extends FileUtil {
 			boolean isDeltaAirlines = driver.findElement(deltaAirLines).isSelected();
 
 			if (!isTwoStops && isDeltaAirlines) {
-				Reporter.addStepLog("Stops::::" + "nonstop, up to 1 stop");
-				Reporter.addStepLog("Airlines::::" + "Delta Airlines");
+				System.out.println("Stops::::" + "nonstop, up to 1 stop");
+				System.out.println("Airlines::::" + "Delta Airlines");
 			}
 
 			else {
-				Reporter.addStepLog("Data mismatch with Airlines and number of stops");
+				System.out.println("Data mismatch with Airlines and number of stops");
 			}
 		}
 
 		else {
-			Reporter.addStepLog("User is not navigated to listing page");
+			System.out.println("User is not navigated to listing page");
 		}
 	}
 
@@ -92,7 +91,7 @@ public class ListingPage extends FileUtil {
 			captureScreenShot(driver);
 
 			FlightDetails.getFlightDetails();
-			Reporter.addStepLog("Flight Fare::::" + maxPrice);
+			System.out.println("Flight Fare::::" + maxPrice);
 
 		}
 

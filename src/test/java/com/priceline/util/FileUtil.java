@@ -41,13 +41,9 @@ public class FileUtil {
 
 	@After(order = 2)
 	public void openTestReport() throws Exception {
-		
-		File srcFile = new File(System.getProperty("user.dir") + "\\test-output\\" + "emailable-report.html");
-		File destFile = new File(System.getProperty("user.dir") + "\\output\\" + "test_report_" + System.currentTimeMillis()
-		+ ".html");
-		
-		FileUtils.copyFile(srcFile, destFile);
-		Desktop.getDesktop().browse(destFile.toURI());
+
+		File outputFile = new File(System.getProperty("user.dir") + "\\output\\index.html");
+		Desktop.getDesktop().browse(outputFile.toURI());
 	}
 
 	public static void captureScreenShot(WebDriver driver) {

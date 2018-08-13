@@ -1,8 +1,6 @@
 package com.priceline.po;
 
 import org.openqa.selenium.By;
-
-import com.cucumber.listener.Reporter;
 import com.priceline.util.FileUtil;
 
 public class FlightDetails extends FileUtil {
@@ -18,8 +16,8 @@ public class FlightDetails extends FileUtil {
 		String departureFlight = driver.findElement(departureFlightDetails).getText();
 		String arrivalFlight = driver.findElement(arrivalFlightDetails).getText();
 
-		Reporter.addStepLog("Departure Flight Number::::" + departureFlight);
-		Reporter.addStepLog("Arrival Flight Number::::" + arrivalFlight);
+		System.out.println("Departure Flight Number::::" + departureFlight);
+		System.out.println("Arrival Flight Number::::" + arrivalFlight);
 	}
 
 }
