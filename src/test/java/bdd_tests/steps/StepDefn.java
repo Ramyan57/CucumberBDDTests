@@ -1,41 +1,13 @@
 package bdd_tests.steps;
 
-import java.io.FileInputStream;
-import java.io.IOException;
-import java.util.Properties;
-import cucumber.api.java.Before;
-import org.junit.After;
 import bdd_tests.util.PageObject;
 import cucumber.api.java.en.Given;
 import cucumber.api.java.en.Then;
 import cucumber.api.java.en.When;
-import org.openqa.selenium.WebDriver;
-import org.openqa.selenium.chrome.ChromeDriver;
 
-/**
- * Unit test for simple App.
- */
 public class StepDefn {
 
 	PageObject po = new PageObject();
-    public static WebDriver driver;
-    public static Properties prop = new Properties();
-
-	@Before
-    public void setProperty() throws IOException {
-
-        System.setProperty("webdriver.chrome.driver", System.getProperty("user.dir") + "\\drivers\\chromedriver.exe");
-        driver = new ChromeDriver();
-        FileInputStream propFile = new FileInputStream(System.getProperty("user.dir") + "\\Testdata.properties");
-        prop.load(propFile);
-    }
-
-    @After
-    public void closeBrowser() {
-        if (driver != null) {
-            driver.quit();
-        }
-    }
 
 	@Given("^valid git hub repository link$")
 	public void valid_git_hub_repository_link() {
