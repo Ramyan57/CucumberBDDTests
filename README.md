@@ -1,4 +1,4 @@
-# CucumberBDDTests
+# Priceline project
 
-To execute the project: Run the Runner.java class under main folder
-JDK version: Java 8
+To execute the project: Run 'Runner.java' class as JUnit test under main folder <br/>
+JDK: Java 8
