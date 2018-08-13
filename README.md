@@ -1,4 +1,4 @@
 # Executing Selenium TestNG project
 
-To execute the project: select 'Runner.java' class present under main folder and Run as TESTNG test <br/>
+To execute the project: select 'runner.xml' present under com.selenium.runner package and Run as TESTNG Suite <br/>
 JDK: Java 8
